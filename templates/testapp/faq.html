@@ -1,0 +1,173 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block title %}Faq{% endblock %}
+
+{% block content %}
+<section class="background_image py-5">
+    <div class="container">
+        <div class="text-white text-center">
+          <h1 class="display-1 txt_shadow" style="font-weight: 800; font-size: 6vh;">FAQs</h1><br>
+          <button type="button" class="btn btn-danger btn-lg m-2 rounded-pill"><a href="#" class="text-white"><b> Our Expertise</b></a></button>
+            <button type="button" class="btn btn-light btn-lg m-2 rounded-pill"><a href="{% url 'testapp:contact' %}" class="text_color"><b> Get Contact Us</b></a></button>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white py-5">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-size">Frequiently Ask Question</h2>
+        </div><br>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5>WHAT IS CLIPPING PATH?</h5>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>Clipping Path is a service where cutout the images from background for using anywhere. This method is most popular for online use of photo.</p>               
+                 </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h5>CAN I CHECK FOR QUALITY OF WORK BY USING FREE DEMO?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>Yes, Of-course. As a Customer you are fully claimant to measure and evaluate the standard of our clipping path service before ordering us. You have opportunity to test our service for check our expertise and skill before assigning ourselves for your task.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h5>WOULD MY IMAGES BE SECURE AND SAFE?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>You’re provided each and every image is 100% secured in our company. We never share your files to another person or company because we always maintain honesty and ethics in our work. So, your files are fully safe in us.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingfour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    <h5>WHAT TYPES OF FILES YOU ACCEPT?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>As a professional, we tend to accept picture files in any formats that any person might suppose in this specific regard. JPG, PNG, PSD, PDF, TIFF, RAW, are some of the most common file formats that are supported on our part..</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingfive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                    <h5>WHAT IS TURNAROUND TIME?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>Turnaround time commonly is concerned with the complexity and amount of the might assign us at any particular instance. On average, maximum projects take less than 24 hours. However, depending on the complexity of effort needed to be deployed the project may take longer. Don’t worry; we’ll let you know how long the job will take, at the time of starting off! But we always consider your targeted turnaround time and emergency.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingsix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                    <h5>HOW WOULD I PAY YOU?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>As we can accept payment methods PayPal, Payoneer and Bank transfer. After we receive an order, we will create an invoice with all the specifics where you can pay us. A link will be added on the invoice where you send payment to us.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingseven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-info btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                    <h5>HOW MANY REVISION YOU ACCEPT?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+                <div class="card-body txt-sz-p">
+                  <p>The job is never over, until you’re fully satisfied. If you’re not satisfied, we’ll even redo our work, free of charge!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="text-center txt-sz-p">
+      <h3 class="text-size txt_shadow">PRICING</h3>
+      <p>Clipping Paths India (CPIn) is a unique image editing company. We never think about pricing. Our main concentration is the quality of work and our 1st goal is to show the quality of work and buildup a long-term business relationship.</p>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 my-2">
+          <div class="py-5 p-3 border text-center bg-white txt-sz-p shadow">
+            <h3 class="pt-3">STARTER</h3>
+            <h1 class="display-1 txt_shadow" style="font-weight: 500; font-size: 10vh;">$0.29</h1>
+            <p>/Per Image</p>
+            <p class="border-bottom">Basic Plan For Beginners.</p><br>
+            <p><b>10 Image/$10</b>  Minimum Order</p>
+            <p> <b>2 Images Free</b> Trial Before Ordering</p>            
+            <p><b>JPEG, PNG, PSD, TIFF</b>  Format</p>   
+            <p><b>24/7 </b> Support</p> 
+            <p><b> 3 Times</b> Revision </p>  
+            <p> <b>Affiliate</b> Opportunities</p> 
+            <p> <b>C To C Contact</b> Not Required</p>
+            <p> <b>No Monthly</b> Payment System</p><br>
+            <button type="button" class="btn border shadow btn-lg m-2"><a href="#"><b>Free Trial</b></a></button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 my-2">
+          <div class="py-5 p-3 border text-center bg-white txt-sz-p shadow">
+            <h3 class="pt-3 text-info">PROFESSIONAL</h3>
+            <h1 class="display-1 txt_shadow" style="font-weight: 500; font-size: 10vh;">$0.21</h1>
+            <p>/Per Image</p>
+            <p class="border-bottom">Perfect For Professionals & Businesses.</p><br>
+            <p><b>100 Image</b> Minimum Order </p>
+            <p> <b> 3 Images Free</b> Trial Before Ordering</p>   
+            <p><b>JPEG, PNG, PSD, TIFF, RAW, PDF</b>  Format</p>   
+            <p>24/7 Support</p> 
+            <p><b> Unlimited</b> Revision </p>  
+            <p> <b>Affiliate</b> Opportunities</p> 
+            <p> <b>C To C Contact</b> Not Required</p>
+            <p> <b>Monthly</b> Payment System</p><br>
+            <button type="button" class="btn btn-warning shadow btn-lg m-2"><a href="#" class="text-white"><b>Free Trial</b></a></button>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block title %}pricing{% endblock %}
+
+
+{% block content %}
+  <section class="background_image py-5">
+    <div class="container">
+        <div class="text-white text-center">
+          <h1 class="display-1 txt_shadow" style="font-weight: 800; font-size: 6vh;">PRICING</h1><br>
+          <button type="button" class="btn btn-danger btn-lg m-2 rounded-pill"><a href="#" class="text-white"><b> Our Expertise</b></a></button>
+            <button type="button" class="btn btn-light btn-lg m-2 rounded-pill"><a href="{% url 'testapp:contact' %}" class="text_color"><b> Get Contact Us</b></a></button>
+      </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="text-center txt-sz-p">
+      <h3 class="text-size txt_shadow">PRICING</h3>
+      <p>Clipping Paths India (CPIn) is a unique image editing company. We never think about pricing. Our main concentration is the quality of work and our 1st goal is to show the quality of work and buildup a long-term business relationship.</p>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 my-2">
+          <div class="py-5 p-3 border text-center bg-white txt-sz-p shadow">
+            <h3 class="pt-3">STARTER</h3>
+            <h1 class="display-1 txt_shadow" style="font-weight: 500; font-size: 10vh;">$0.29</h1>
+            <p>/Per Image</p>
+            <p class="border-bottom">Basic Plan For Beginners.</p><br>
+            <p><b>10 Image/$10</b>  Minimum Order</p>
+            <p> <b>2 Images Free</b> Trial Before Ordering</p>            
+            <p><b>JPEG, PNG, PSD, TIFF</b>  Format</p>   
+            <p><b>24/7 </b> Support</p> 
+            <p><b> 3 Times</b> Revision </p>  
+            <p> <b>Affiliate</b> Opportunities</p> 
+            <p> <b>C To C Contact</b> Not Required</p>
+            <p> <b>No Monthly</b> Payment System</p><br>
+            <button type="button" class="btn border shadow btn-lg m-2"><a href="#"><b>Free Trial</b></a></button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 my-2">
+          <div class="py-5 p-3 border text-center bg-white txt-sz-p shadow">
+            <h3 class="pt-3 text-info">PROFESSIONAL</h3>
+            <h1 class="display-1 txt_shadow" style="font-weight: 500; font-size: 10vh;">$0.21</h1>
+            <p>/Per Image</p>
+            <p class="border-bottom">Perfect For Professionals & Businesses.</p><br>
+            <p><b>100 Image</b> Minimum Order </p>
+            <p> <b> 3 Images Free</b> Trial Before Ordering</p>   
+            <p><b>JPEG, PNG, PSD, TIFF, RAW, PDF</b>  Format</p>   
+            <p>24/7 Support</p> 
+            <p><b> Unlimited</b> Revision </p>  
+            <p> <b>Affiliate</b> Opportunities</p> 
+            <p> <b>C To C Contact</b> Not Required</p>
+            <p> <b>Monthly</b> Payment System</p><br>
+            <button type="button" class="btn btn-warning shadow btn-lg m-2"><a href="#" class="text-white"><b>Free Trial</b></a></button>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
+ 

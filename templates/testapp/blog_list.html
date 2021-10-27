@@ -1,0 +1,54 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 p-3">
+                <div class="h-100 border-bottom">
+                    <a href="{% url 'testapp:blogdetails' %}" class="blog-card-a">
+                    <img src="{% static 'theme/assets/img/Multiple-Image-Editing-Services.jpg' %}"  class="img-fluid img-card-a img-card-shadow-a" width="700" height="350" alt=""><br>
+                    <h3 class="pt-3">Clipping Path India Offers Multiple clipping path services at an affordable price</h3>
+                    </a>
+                    <p>by admin | Aug 22, 2021 | Uncategorized</p>
+                    <p>Clipping Path services is the most fundamental service in Image Editing in which your image is altered according to the image requirement of the client. You would be surprised to know that it is never easy to select a company when there are so many concerns on your...</p>
+                </div>
+        </div>
+        <div class="col-sm-6 col-md-6 p-3">
+            <div class="h-100 border-bottom">
+                <a href="{% url 'testapp:blogdetails' %}" class="blog-card-a">
+                <img src="{% static 'theme/assets/img/Clipping-Path-After-5-850x675-1.jpg' %}" class="img-fluid img-card-a img-card-shadow-a" height="350" width="700" alt="">
+                <h3 class="pt-3">Affordable photo editing services for eCommerce</h3>
+                </a>
+                <p>by admin | Aug 22, 2021 | Uncategorized</p>
+                <p>Clipping Path services is the most fundamental service in Image Editing in which your image is altered according to the image requirement of the client. You would be surprised to know that it is never easy to select a company when there are so many concerns on your...</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 p-3">
+            <div class="h-100">
+                <a href="{% url 'testapp:blogdetails' %}" class="blog-card-a">
+                <img src="{% static 'theme/assets/img/clipping-ecomerce-editing-2.jpg' %}" class="img-fluid img-card-a img-card-shadow-a" height="350" width="700" alt="">
+                <h3 class="pt-3">Affordable photo editing services for eCommerce</h3>
+                </a>
+                <p>by admin | Aug 22, 2021 | Uncategorized</p>
+                <p>Clipping Path services is the most fundamental service in Image Editing in which your image is altered according to the image requirement of the client. You would be surprised to know that it is never easy to select a company when there are so many concerns on your...</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 p-3">
+            <div class="h-100">
+                <a href="{% url 'testapp:blogdetails' %}" class="blog-card-a">
+                <img src="{% static 'theme/assets/img/Multiple-Image-Editing-Services.jpg' %}" class="img-fluid img-card-a img-card-shadow-a" height="350" width="700" alt="">
+                <h3 class="pt-3">Affordable photo editing services for eCommerce</h3>
+                </a>
+                <p>by admin | Aug 22, 2021 | Uncategorized</p>
+                <p>Clipping Path services is the most fundamental service in Image Editing in which your image is altered according to the image requirement of the client. You would be surprised to know that it is never easy to select a company when there are so many concerns on your...</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+{% endblock content %}

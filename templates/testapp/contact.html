@@ -1,0 +1,68 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+
+{% block content%}
+
+<section class="py-5">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="text-size txt_shadow border-btm pb-2">Get Contact Us</h1>
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-md-8 border-btm">
+        <div class="d-flex row-h1 align-items-center">
+          <div class="p-2">
+            <h4 class="txt_shadow">Production Office:</h4>
+            <p class="txt-sz-p"> House-10, Road-12, Sector-13, Uttara, Dhaka-1230</p><hr>
+            <h4 class="txt_shadow">USA Office:</h4>
+            <p class="txt-sz-p">73-15 3rd avenue apt#3R Brooklyn, NY-11209.</p><hr>
+            <h4 class="txt_shadow">USA India Office:</h4>
+            <p class="txt-sz-p">92/26, Koyra, Kadambagachi, North 24 Parganas, West Bengal-700125,</p><hr>
+            <h4 class="txt_shadow"> India Business Hours: </h4>
+            <p class="txt-sz-p">We are 24/7 open in 365 days.</p><hr>
+            <h4 class="txt_shadow">Email: </h4>
+            <p class="txt-sz-p">clippingpathsindia@gmail.com</p><hr>
+            <h4 class="txt_shadow"> Skype/ live:</h4>
+            <p class="txt-sz-p"> clippingpathsindia</p><hr>
+            <h4 class="txt_shadow">Social Media:</h4>
+            <p class="txt-sz-p"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> &nbsp; &nbsp; <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5">
+<div class="container"> 
+        <div class="row justify-content-center p-4 ">
+            <div class="col-sm-10 col-md-10 border-btm">
+              <h3 class="text-muted">MESSAGE US</h3><br>
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control form-control-lg shadow-lg" name="name"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required><br>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="email" class="form-control form-control-lg shadow-lg" id="inputEmail4" placeholder="Email">
+                      </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="text" class="form-control form-control-lg shadow-lg" name="phone"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone" required><br>
+                    </div> -->
+                    <div class="form-group">
+                      <textarea rows="4" cols="50"  class="form-control form-control-lg shadow-lg" placeholder="Enter Your MSG" required></textarea><br>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <a type="submit" class="btn footer-background text-white btn-lg button_slide shadow" href="imageretuch/" role="button">Submit</a><br><br>
+                  </form>
+            </div>
+        </div>
+        <div class="text-center p-2">
+          <img src="{% static 'theme/assets/img/clippingpathsindia-contact-us.jpg' %}" class="img-fluid  rounded"  title="clipping paths india contact" alt="clipping paths india contact">
+        </div>
+</div>
+</section>
+
+{% endblock content %}
