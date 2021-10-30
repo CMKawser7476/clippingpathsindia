@@ -16,6 +16,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo systemctl stop clipingpath.service
-            cd clippingpathsindia
+            cd /usr/share/nginx/html/clippingpathsindia
             git pull
             sudo systemctl start clipingpath.service
